@@ -1,0 +1,56 @@
+.cardsSection {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    line-height: 1.6;
+    background: #13181c;
+    font-family: sans-serif;
+    grid-template-columns: auto auto auto;
+    
+}
+
+.cardMakeUp {
+    color: white;
+    background-image: url(../img/makijaz1.jpg);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 34ch;
+}
+
+.cardNuSkin {
+    color: white;
+    background-image: url(../img/nuskin_card);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 34ch;
+}
+
+.cardCooperation {
+    color: white;
+    background-image: url(../img/wspolpraca_card.jpg);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 34ch;
+}
+
+.cardContent {
+    padding: 1.5em;
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.3) 20%,
+        hsl(0 0% 0% / 1)
+    );
+}
+.cardTitle {
+    position: relative;
+}
+
+.cardTitle::after {
+    content: "";
+    background: gold;
+    height: 3px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
