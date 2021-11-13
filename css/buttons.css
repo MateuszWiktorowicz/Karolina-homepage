@@ -4,6 +4,7 @@
     color: white;
     background-color: teal;
     padding: 0.5em 1.25em;
+    border-radius: 0.25rem;
 }
 
 .cardButton:hover {
@@ -12,5 +13,5 @@
 }
 .cardButton:focus {
 background-color: hsl(180, 100%, 45%);
-
+color: black;
 }
