@@ -14,6 +14,13 @@
     background-size: cover;
     padding: 8rem 0 0;
     max-width: 34ch;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+.cardMakeUp:hover {
+    transform: scale(1.05);
 }
 
 .cardNuSkin {
@@ -45,11 +52,18 @@
 
 .cardTitle::after {
     content: "";
-    background: gold;
+    background: teal;
     height: 3px;
     position: absolute;
     width: calc(100% + var(--padding));
     left: calc(var(--padding) * -1);
     bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
    
+}
+
+.cardMakeUp:hover .cardTitle::after {
+    transform: scaleX(1);
 }
