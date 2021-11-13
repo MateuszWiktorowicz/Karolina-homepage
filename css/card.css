@@ -6,7 +6,6 @@
     background: #13181c;
     font-family: sans-serif;
     grid-template-columns: auto auto auto;
-    
 }
 
 .cardMakeUp {
@@ -34,15 +33,14 @@
 }
 
 .cardContent {
-    padding: 1.5em;
-    background: linear-gradient(
-        hsl(0 0% 0% / 0),
-        hsl(20 0% 0% / 0.3) 20%,
-        hsl(0 0% 0% / 1)
-    );
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient( hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.3) 20%, hsl(0 0% 0% / 1));
 }
+
 .cardTitle {
     position: relative;
+    width: max-content;
 }
 
 .cardTitle::after {
@@ -51,6 +49,7 @@
     height: 3px;
     position: absolute;
     width: 100%;
-    left: 0;
+    left: calc(var(--padding) * -1);
     bottom: 0;
+   
 }
