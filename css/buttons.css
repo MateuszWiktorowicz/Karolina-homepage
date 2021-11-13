@@ -1,0 +1,16 @@
+.cardButton {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: teal;
+    padding: 0.5em 1.25em;
+}
+
+.cardButton:hover {
+    background-color: hsl(180, 100%, 35%);
+    color: black;
+}
+.cardButton:focus {
+background-color: hsl(180, 100%, 45%);
+
+}
