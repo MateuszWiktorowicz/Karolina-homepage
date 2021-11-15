@@ -1,0 +1,41 @@
+.main {
+    background-image: url(../img/nuskinCompany.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center center;
+}
+
+header {
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.navList {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 5px 50px 5px 0px;
+}
+
+.navList__item--Content {
+    text-decoration: none;
+    width: 100px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navList__item {
+    padding: 10px 30px 10px 0px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: goldenrod;
+}
