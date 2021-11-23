@@ -1,0 +1,12 @@
+.aboutMeSection {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.aboutMe__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
