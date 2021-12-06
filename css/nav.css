@@ -1,7 +1,8 @@
 .main {
-    background-image: url(../img/nuskinCompany.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background_nav.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
     height: 100vh;
     background-position: center center;
     
@@ -11,13 +12,14 @@
 
 
 header {
-    background-color: teal;
+   
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
+    padding: 10px 15px;
 }
 
 .navList {
@@ -31,8 +33,9 @@ header {
 .navList__item--Content {
     text-decoration: none;
     width: 100px;
-    color: white;
+    color: #ffffff;
     font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 .navList__item {
@@ -42,4 +45,5 @@ header {
 .logo {
     font-size: 2rem;
     color: goldenrod;
+    text-transform: uppercase;
 }
