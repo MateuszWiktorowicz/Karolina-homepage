@@ -6,13 +6,19 @@
     height: 100vh;
     background-position: center center;
     
+    
 }
 
    
 
 
+
 header {
-   
+
+   --text:  #f4f4f4;
+   --text-inverse: #333; 
+   --background: transparent; 
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,6 +26,16 @@ header {
     position: fixed;
     width: 100%;
     padding: 10px 15px;
+    color: var(--text);
+    background: var(--background);
+
+    
+}
+
+
+.headerScrolled {
+    color: var(--text-inverse);
+    background: var(--text);
 }
 
 .navList {
@@ -47,3 +63,4 @@ header {
     color: goldenrod;
     text-transform: uppercase;
 }
+
