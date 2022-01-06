@@ -1,23 +1,37 @@
 .aboutMeSection {
-    width:85%;
-    margin: auto;
+    margin: 100px auto;
+
+    width: 95%;
+    height: 1000px;
+    border-radius: 5px;
     display: flex;
     padding: 50px 0px;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-   
+
 
 }
 
 .aboutMe__image {
-    flex-basis: 50%;
-    text-align: center;
+    
+    flex-basis: 60%;
+    height: 100vh;
+    background-image: url(../img/work.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    border-radius:  15px 0px 0px 15px;
+    
+
 }
 
 .aboutMe__text {
-    flex-basis: 50%;
-    text-align: center
+    height: 100vh;
+    flex-basis: 40%;
+    text-align: center;
+    background: #e14a1361;
+    border-radius: 0px 15px 15px 0px;
 }
 
 .aboutMe__text h2 {
