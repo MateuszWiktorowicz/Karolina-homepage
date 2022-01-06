@@ -1,12 +1,25 @@
 .aboutMeSection {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    width:85%;
+    margin: auto;
+    display: flex;
+    padding: 50px 0px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+   
 
 }
 
 .aboutMe__image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-basis: 50%;
+    text-align: center;
 }
 
+.aboutMe__text {
+    flex-basis: 50%;
+    text-align: center
+}
+
+.aboutMe__text h2 {
+    margin-bottom: 50px;
+}
