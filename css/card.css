@@ -23,6 +23,7 @@
 
 
 
+
 .cardMakeUp {
     color: white;
     background-image: url(../img/makijaz1.jpg);
@@ -157,4 +158,29 @@
 
 .cardCooperation:hover .cardTitle::after {
     transform: scaleX(1);
+}
+
+
+
+@media (max-width: 820px) {
+    .cardsSection {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        ;
+    }
+    .cardMakeUp, .cardNuSkin, .cardCooperation {
+        justify-self: center;
+    }
+    .cardNuSkin {
+        grid-area: c;
+    }
+    .cardNuSkin__text {
+        grid-area: d;
+    }
 }
