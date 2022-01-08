@@ -1,5 +1,6 @@
 .cardsSection {
     padding: 30px 20px;
+    grid-template-columns: repeat(8, 1fr);
     width: 95%;
     display: grid;
     min-height: 100vh;
@@ -7,9 +8,17 @@
     line-height: 1.6;
     background: #13181c;
     font-family: sans-serif;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: minmax(100px, auto);
     margin: 40px auto;
-    gap: 20px 10px;
+    gap: 50px 10px;
+    grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d"
+    "e e e e f f f f"
+    "e e e e f f f f"
+    ;
 }
 
 
@@ -18,27 +27,34 @@
     color: white;
     background-image: url(../img/makijaz1.jpg);
     background-size: cover;
-    padding: 8rem 0 0;
-    max-width: 34ch;
+    padding: 10rem 0 0;
+    max-width: 42ch;
     border-radius: 1rem;
     overflow: hidden;
     transition: transform 500ms ease;
+    grid-area: a;
 }
 
 .cardMakeUp:hover {
     transform: scale(1.05);
 }
 
+.cardMakeUp__text {
+    grid-area: b;
+    justify-self: end;
+}
+
 .cardNuSkin {
     color: white;
     background-image: url(../img/nuskin_card);
     background-size: cover;
-    padding: 8rem 0 0;
-    max-width: 34ch;
+    padding: 10rem 0 0;
+    max-width: 42ch;
     border-radius: 1rem;
     overflow: hidden;
     transition: transform 500ms ease;
     justify-self: end;
+    grid-area: d;
    
     
 }
@@ -47,19 +63,30 @@
     transform: scale(1.05);
 }
 
+.cardNuSkin__text {
+    grid-area: c;
+    justify-self: start;
+}
+
 .cardCooperation {
     color: white;
     background-image: url(../img/wspolpraca_card.jpg);
     background-size: cover;
-    padding: 8rem 0 0;
-    max-width: 34ch;
+    padding: 10rem 0 0;
+    max-width: 42ch;
     border-radius: 1rem;
     overflow: hidden;
     transition: transform 500ms ease;
+    grid-area: e;
 }
 
 .cardCooperation:hover {
     transform: scale(1.05);
+}
+
+.cardCooperation__text {
+    grid-area: f;
+    justify-self: end;
 }
 
 .cardContent {
