@@ -14,15 +14,15 @@
 }
 
 .aboutMe__image {
-    
+
     flex-basis: 60%;
     height: 100vh;
     background-image: url(../img/Work.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
-    border-radius:  15px 0px 0px 15px;
-    
+    border-radius: 15px 0px 0px 15px;
+
 
 }
 
@@ -36,4 +36,27 @@
 
 .aboutMe__text h2 {
     margin-bottom: 50px;
+}
+
+@media (max-width: 820px) {
+    
+    .aboutMe__image {
+        border-radius: 15px 15px 0px 0px;
+        flex-basis: 100%;
+        background-position: -100px 0px;
+     
+    }
+    
+    .aboutMe__text {
+        border-radius: 0px 0px 15px 15px;
+        flex-basis: 100%;
+        height: 100%;
+        padding: 50px 10px 50px 10px;
+       
+    }
+    .aboutMeSection {
+        height: 100%;
+       
+    }
+
 }
