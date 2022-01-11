@@ -5,19 +5,19 @@
     width: 100%;
     height: 100vh;
     background-position: center center;
-    
-    
+
+
 }
 
-   
+
 
 
 
 header {
 
-   --text:  #f4f4f4;
-   --text-inverse: #333; 
-   --background: transparent; 
+    --text: #f4f4f4;
+    --text-inverse: #333;
+    --background: transparent;
 
     display: flex;
     flex-direction: row;
@@ -29,7 +29,7 @@ header {
     color: var(--text);
     background: var(--background);
 
-    
+
 }
 
 
@@ -39,18 +39,32 @@ header {
 }
 
 .navList {
+    background: hsl(0 0% 100% / 0.75);
+
     margin: 0;
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 5px 50px 5px 0px;
+    padding: 5px 10px 5px 0px;
+
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+    .navList {
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+    }
+}
+
+.navList__toggle {
+    display: none;
 }
 
 .navList__item--Content {
     text-decoration: none;
     width: 100px;
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -64,3 +78,45 @@ header {
     text-transform: uppercase;
 }
 
+
+@media(max-width: 820px) {
+    .navList {
+        padding: min(30vh, 10rem) 2em;
+        position: fixed;
+        inset: 0 0 0 30%;
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        transform: translateX(100%);
+
+    }
+
+    .navList[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    .navList__toggle {
+        display: block;
+        background-image: url(../img/menuButton.svg);
+        background-color: transparent;
+        background-size: cover;
+        position: absolute;
+        z-index: 9999;
+        background-repeat: no-repeat;
+        border: 0;
+        height: 2rem;
+        width: 2rem;
+        
+
+        aspect-ratio: 1;
+
+
+        top: 2rem;
+        right: 2rem;
+    }
+    .navList__toggle[area-expanded="true"] {
+        background-image: url(../img/xMenu.svg);
+    }
+}

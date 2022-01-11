@@ -15,6 +15,7 @@
     <link href="css/aboutMe.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <script defer src="js/observer.js"></script>
+    <script defer src="js/nav.js"></script>
     <script src="https://kit.fontawesome.com/218cf3bd4e.js"></script>
     <title>Karolina Gubiec-Ruta</title>
 </head>
@@ -23,11 +24,13 @@
     <main class="main">
         <header>
             <div class="logo">
-                Beauty Room
+                Beauty <br>Room
             </div>
-
-            <div class="nav">
-                <ul class="navList">
+<button class="navList__toggle" aria-controls="navList" aria-expanded="false">
+    <span class="rsOnly"></span>
+</button>
+            <nav>
+                <ul id="navList" data-visible="false" class="navList">
                     <li class="navList__item"><a href="#" class="navList__item--Content">Home</a></li>
                     <li class="navList__item"><a href="#" class="navList__item--Content">About</a></li>
                     <li class="navList__item"><a href="#" class="navList__item--Content">MakeUP</a></li>
@@ -36,7 +39,7 @@
                     <li class="navList__item"><a href="#" class="navList__item--Content">Partnership</a></li>
 
                 </ul>
-            </div>
+            </nav>
 
         </header>
     </main>
